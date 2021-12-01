@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그 내부에 넣을 수 있는 다른 태그</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Caption</caption>
+        <colgroup>
+            <col span="2" style="background: red" />
+            <col style="background: blue" />
+        </colgroup>
+    <thead style="background: green">
+        <tr>
+            <th>table header 1</th>
+            <th>table header 2</th>
+            <th>table header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>table data 1</td>
+            <td>table data 2</td>
+            <td>table data 3</td>
+        </tr>
+        <tr>
+            <td>table data 4</td>
+            <td>table data 5</td>
+            <td>table data 6</td>
+        </tr>
+    </tbody>
+    <tfoot style="background: yellow">
+        <tr>
+            <td>table data 7</td>
+            <td>table data 8</td>
+            <td>table data 9</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
