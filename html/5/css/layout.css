@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+/* @import : 로딩 속도 저하됨 */
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+
+/* 헤더 (width, 가운데정렬) */
+/* 계층 구조에 맞게 써주기 */
+
+#main_header {
+    /* border: 1px solid red; */
+    width: 960px;
+    margin: 0 auto;
+    height: 160px;
+    position: relative;
+}
+
+#main_header > #title {
+    position: absolute; /* 부모태그에 height, relative주기 */
+    left: 20px;
+    top: 30px;
+}
+
+#main_header > #main_gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+#main_header > #main_lnb {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+/* 타이틀 */
+
+#title {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* 메뉴-gnb */
+#main_gnb > ul {
+
+}
+
+#main_gnb > ul > li {
+
+}
+
+#main_gnb > ul > li > a {
+
+}
+
+#main_gnb > ul > li > a:hover {
+    
+}
+
+#main_gnb > ul > li:first-child > a {
+    
+}
+
+#main_gnb > ul > li:last-child > a {
+    
+}
+
+/* 메뉴-lnb */
+
+#main_lnb > ul {
+
+}
+
+#main_lnb > ul > li {
+
+}
+
+#main_lnb > ul > li > a {
+
+}
+
+#main_lnb > ul > li > a:hover {
+    
+}
+
+#main_lnb > ul > li:first-child > a {
+    
+}
+
+#main_lnb > ul > li:last-child > a {
+    
+}
