@@ -77,11 +77,29 @@ img {
 
 #main_gnb > ul > li:first-child > a {
     border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+#main_gnb > ul > li:nth-child(2) > a {
+    border-right: none;
+}
+
+#main_gnb > ul > li:nth-child(3) > a {
+    border-right: none;
+}
+
+#main_gnb > ul > li:nth-child(3) > a {
+    border-right: none;
+}
+
+#main_gnb > ul > li:nth-child(4) > a {
+    border-right: none;
 }
 
 #main_gnb > ul > li:last-child > a {
     border-radius: 0 10px 10px 0;
 }
+
 
 /* 메뉴-lnb */
 
@@ -106,6 +124,19 @@ img {
 
 #main_lnb > ul > li:first-child > a {
     border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+#main_lnb > ul > li:nth-child(2) > a {
+    border-right: none;
+}
+
+#main_lnb > ul > li:nth-child(3) > a {
+    border-right: none;
+}
+
+#main_lnb > ul > li:nth-child(4) > a {
+    border-right: none;
 }
 
 #main_lnb > ul > li:last-child > a {
@@ -174,6 +205,10 @@ section.buttons > label {
     color: rgb(92, 150, 197);
 }
 
+section.buttons > label:nth-child(1) {
+    
+}
+
 input:nth-of-type(1):checked ~ section.buttons > label:nth-of-type(1) {
     background: rgb(92, 150, 197);
     color: white;
@@ -206,6 +241,8 @@ input:nth-of-type(2):checked ~ section.buttons > label:nth-of-type(2) {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* 푸터 */
 #main_footer {
     width: 960px;
     margin: 0 auto;
