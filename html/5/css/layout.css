@@ -127,6 +127,7 @@ img {
 #content > #main_aside {
     float: right;
     width: 200px; /* 10px 간격을 남겨줌. */
+
 }
 
 /* 본문 */
