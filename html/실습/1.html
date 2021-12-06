@@ -7,53 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web-site</title>
     <style>
-        nav {
+        /* #header nav {
             display: block;
+            width: 100%;
         }
-        nav ul {
+
+        #header nav ul {
             float: right;
         }
-        nav ul li {
+
+        #header nav ul li {
             display: inline-block;
         }
-        nav div {
+
+        #header nav div {
             display: inline-block;
+            position: relative;
         }
+
         #section01 {
             background: rgb(196, 196, 196);
+            width: 100%;
         }
+
+        #section01 h2 {
+            margin-bottom: 0;
+        }
+
+        #section01 p {
+            margin-top: 0;
+        }
+
         #section01 .moreinfo {
             background: #fff;
             width: 150px;
-            padding:15px; 
+            padding: 15px;
             border-radius: 35px;
         }
-        .moreinfo a {
+
+        #section01 .moreinfo a {
             font-size: 16px;
             font-style: none;
             text-decoration: none;
             color: #000;
         }
+
         #section02 {
             background: rgb(196, 196, 196);
             display: block;
         }
+
+        #section02 h2 {
+            text-align: center;
+        }
+
         #section02 li {
             display: inline-block;
         }
+
         #section03 {
             background: rgb(196, 196, 196);
-            display: block;
         }
+
+        #section03 a {
+            vertical-align: top;
+        }
+
         #section03 h2 {
-            border: 3px solid red;;
+            border: 0px solid red;
             display: inline;
         }
+
         #section03 .news {
             border: 3px solid blanchedalmond;
             display: inline-block;
             width: 300px;
         }
+
         #section03 .newsimage {
             border: 3px solid blue;
             width: 300px;
@@ -61,13 +91,42 @@
             background: url('./images/news.jpg');
             background-size: cover;
         }
+
+        #section04 {
+            background: rgb(196, 196, 196);
+            text-align: center;
+        }
+        #section04 ul li {
+            display: inline-block;
+        }
         
+        #section04 .business {
+            text-align: left;
+            position: relative;
+            right: 0;
+        }
+
+        #section04 .business p {
+            text-align: left;
+        }
+
+        #section04 .business p:nth-child(4) {
+            width: 300px;
+            padding-top: 30px;
+        }
+
+        #section04 .business p {
+            margin: 0;
+            padding: 0;
+        }
+         */
+
     </style>
 </head>
 
 <body>
-    <header>
-        
+    <header id="header">
+
         <nav>
             <h1>로고</h1>
             <ul>
@@ -82,7 +141,7 @@
                 <span>로고</span>
                 <a href="#">메뉴</a>
             </div>
-            
+
         </nav>
     </header>
 
@@ -90,8 +149,8 @@
         <section id="section01">
             <div>
                 <h2>인프라플랜트</h2>
-                <span>Infra/Plant Management</span>
-                <p>환경오염을 줄이고 지역사회에 반드시 필요한 O&M시설을 관리합니다.</p>
+                <p>Infra/Plant Management</p>
+                <p>환경오염을 줄이고 지역사회에 반드시<br /> 필요한 O&M시설을 관리합니다.</p>
                 <div class="moreinfo"><a href="#">more info</a></div>
             </div>
             <div>사진</div>
@@ -110,9 +169,9 @@
 
         <section id="section03">
             <h2>ESG 뉴스</h2>
-            <p>
-                1% 나눔기금, 임직원의 작은 나눔으로 "밝은세상" 만들기를 희망하는 마음으로 담은 
-                지속적인 사회공헌에 앞장서고 있습니다. 
+            <p class="newsheader">
+                1% 나눔기금, 임직원의 작은 나눔으로 "밝은세상" 만들기를 희망하는 마음으로 담은
+                지속적인<br /> 사회공헌에 앞장서고 있습니다.
             </p>
             <a href="#">read more</a>
             <div class="news">
@@ -125,10 +184,8 @@
                     <span>#지배구조(G)</span>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="뉴스" />
-                </div>
+            <div class="news">
+                <div class="newsimage"></div>
                 <div>
                     <a href="#">지배구조(G)</a>
                     <span>2021.06.09</span>
@@ -137,10 +194,8 @@
                     <span>#지배구조(G)</span>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="뉴스" />
-                </div>
+            <div class="news">
+                <div class="newsimage"></div>
                 <div>
                     <a href="#">지배구조(G)</a>
                     <span>2021.06.09</span>
@@ -160,7 +215,10 @@
                 <li><a href="#">04. 골프&레저</a></li>
                 <li><a href="#">05. 지역난방</a></li>
             </ul>
-            <div>
+            <div class="business">
+                <div class="bimg">
+                    사진
+                </div>
                 <p>01</p>
                 <p>종합부동산 서비스</p>
                 <p>
