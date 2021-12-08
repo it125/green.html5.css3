@@ -5,7 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./text.js"></script>
+    <!-- <script src="./text.js"></script> -->
+    <script>
+        var engScore = 90, korScore = "90"; // 문자형 데이터 => number("90");
+        var studentName = '가나다';
+        var test = null; //코드를 깨끗하게 만들어주는 역할.
+        var sum = engScore + Number(korScore);
+        var flag = Boolean(54645);
+        // ***** 0, null, undefined, "" 빼고 다 true *****
+
+        // 변수 값 변경
+        engScore = 95;
+        // 변수 값 제거
+        studentName = null;
+
+        // 변수 출력
+        document.write("합계: " + sum + "점<br />");
+        document.write(engScore + "점<br />");
+        document.write(korScore + "점<br />");
+        document.write(typeof studentName);
+    </script>
 </head>
 <body>
     
