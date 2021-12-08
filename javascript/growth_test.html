@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 증감 연산자 </title>
+<script>
+	var num1 = 10;
+	var num2 = 20;
+	var result;
+
+	num1--; 
+	console.log(num1); 
+
+	num1++; 
+	console.log(num1); 
+
+	result = num2++; // 대입 먼저 
+	console.log(result); // 20
+	console.log(num2); // 21
+
+	result = ++num2; // 증가 먼저
+	console.log(result); // 22
+	console.log(num2); // 22
+</script>
+</head>
+<body>
+</body>
+</html>
