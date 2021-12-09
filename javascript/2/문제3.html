@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ho = "허니버터칩";
+        var kan = "칸쵸";
+        var pr = "프링글스";
+
+        var price1 = 1300; // 허니버터칩
+        var price2 = 1500; // 칸쵸
+        var price3 = 3000; // 프링글스
+
+        var sn = prompt("과자를 선택하세요.", "");
+        if (sn != ho && sn != kan && sn != pr) {
+            alert("해당 과자가 존재하지 않습니다.");
+            location.reload();
+        }
+
+        if (sn == ho) {
+            var mo = prompt("돈을 넣어주세요.", "");
+            if (mo == "" || mo == 0) {
+                alert("돈을 넣어주세요.");
+                location.reload();
+            } else {
+                if (mo < price1) {
+                    alert("돈이 부족합니다.");
+                    location.reload();
+                } else {
+                    if (mo == price1 || mo >= price1) {
+                        document.write("선택한 과자: " + sn + "<br />");
+                        document.write("과자 가격: " + price1 + "<br />");
+                        document.write("거스름돈: " + (mo - price1) + "<br />");
+                    }
+                }
+            }
+        }
+
+        if (sn == kan) {
+            var mo = prompt("돈을 넣어주세요.", "");
+            if (mo == "" || mo == 0) {
+                alert("돈을 넣어주세요.");
+                location.reload();
+            } else {
+                if (mo < price2) {
+                    alert("돈이 부족합니다.");
+                    location.reload();
+                } else {
+                    if (mo == price2 || mo >= price2) {
+                        document.write("선택한 과자: " + sn + "<br />");
+                        document.write("과자 가격: " + price2 + "<br />");
+                        document.write("거스름돈: " + (mo - price2) + "<br />");
+                    }
+                }
+            }
+        }
+
+        if (sn == pr) {
+            var mo = prompt("돈을 넣어주세요.", "");
+            if (mo == "" || mo == 0) {
+                alert("돈을 넣어주세요.");
+                location.reload();
+            } else {
+                if (mo < price3) {
+                    alert("돈이 부족합니다.");
+                    location.reload();
+                } else {
+                    if (mo == price3 || mo >= price3) {
+                        document.write("선택한 과자: " + sn + "<br />");
+                        document.write("과자 가격: " + price3 + "<br />");
+                        document.write("거스름돈: " + (mo - price3) + "<br />");
+                    }
+                }
+            }
+        }
+        
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

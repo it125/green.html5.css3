@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var first = prompt("첫 번째 숫자를 입력하세요.", "");
+        var second = prompt("두 번째 숫자를 입력하세요.", "");
+        var third = prompt("세 번째 숫자를 입력하세요.", "");
+
+        var total = Number(first) + Number(second) + Number(third);
+        document.write("합계: " + total + "<br />");
+
+        var avg = total / 3;
+        document.write("평균: " + avg + "<br />");
+
+        if (first > second && first > third) {
+            document.write("최대값: " + first + "<br />"); 
+        } else {
+            if (second > first && second > third) {
+                document.write("최대값: " + second + "<br />");
+            } else {
+                document.write("최대값: " + third + "<br />");
+            }
+        }
+
+        if (first < second && first < third) {
+            document.write("최소값: " + first); 
+        } else {
+            if (second < first && second < third) {
+                document.write("최소값: " + second);
+            } else {
+                document.write("최소값: " + third);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

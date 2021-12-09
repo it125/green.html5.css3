@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제1-1</title>
+    <script>
+        var st = prompt("학년을 입력하세요.", "0");
+        var score = prompt("점수를 입력하세요.", "0");
+
+        if (score < 0 || score > 100) {
+            alert("에러입니다.");
+        }
+        
+        if (st == 4) {
+            if (score >= 70) {
+                document.write("합격");
+            } else {
+                document.write("불합격");
+            }
+        } else {
+            if (score >= 60) {
+                document.write("합격");
+            } else {
+                document.write("불합격");
+            }
+        } 
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
