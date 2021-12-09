@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name = prompt ("이름을 입력하세요.", "홍길동");
+        var height = prompt ("신장을 입력하세요.", "0");
+        var weight = prompt ("체중을 입력하세요", "0");
+        var normal_w = (height - 100) * 0.9;
+        var result = weight >= normal_w - 5 && weight <= normal_w + 5;
+        var resultMsg = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+
+        var str = "<table border='1'>";
+            str += "<tr>";    
+            str += "<th>이름</th><th>신장</th><th>체중</th><th>평균체중</th><th>결과</th>";
+            str += "</tr>";
+            str += "<tr>";   
+            str += "<td>" + name + "</td><td>" + height + "</td><td>" + weight + "</td><td>" + normal_w + "</td><td>" + resultMsg + "</td>";
+            str += "</tr>";
+            str += "</table>";
+        document.write(str);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
