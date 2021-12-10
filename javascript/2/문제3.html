@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var ho = "허니버터칩";
-        var kan = "칸쵸";
-        var pr = "프링글스";
+        var sn1 = "허니버터칩";
+        var sn2 = "칸쵸";
+        var sn3 = "프링글스";
 
         var price1 = 1300; // 허니버터칩
         var price2 = 1500; // 칸쵸
         var price3 = 3000; // 프링글스
 
         var sn = prompt("과자를 선택하세요.", "");
-        if (sn != ho && sn != kan && sn != pr) {
+        if (sn != sn1 && sn != sn2 && sn != sn3) {
             alert("해당 과자가 존재하지 않습니다.");
             location.reload();
         }
 
-        if (sn == ho) {
+        if (sn == sn1) {
             var mo = prompt("돈을 넣어주세요.", "");
             if (mo == "" || mo == 0) {
                 alert("돈을 넣어주세요.");
@@ -40,7 +40,7 @@
             }
         }
 
-        if (sn == kan) {
+        if (sn == sn2) {
             var mo = prompt("돈을 넣어주세요.", "");
             if (mo == "" || mo == 0) {
                 alert("돈을 넣어주세요.");
@@ -59,7 +59,7 @@
             }
         }
 
-        if (sn == pr) {
+        if (sn == sn3) {
             var mo = prompt("돈을 넣어주세요.", "");
             if (mo == "" || mo == 0) {
                 alert("돈을 넣어주세요.");
