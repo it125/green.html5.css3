@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bonus</title>
+  <script>
+    var snack = prompt("과자를 입력해주세요.", "");
+
+    var price1 = 1300;
+    var price2 = 1500;
+    var price3 = 3000;
+    var snack1 = "허니버터칩";
+    var snack2 = "칸쵸";
+    var snack3 = "프링글스";
+    var msg;
+
+    if (snack != snack1 && snack != snack2 && snack != snack3) {
+      alert("해당 과자가 존재하지 않습니다.");
+      location.reload();
+    }
+
+    if (snack == snack1) {
+      var money = prompt("돈을 입력해주세요.", "");
+      if (money < price1) {
+        alert("돈이 부족합니다.");
+        location.reload();
+      } else {
+        msg = "선택한 과자: " + snack + "<br />" + "과자 가격: " + price1 + "<br />" + "거스름돈: " + (money - price1);
+        document.write(msg);
+      }
+    }
+
+    if (snack == snack2) {
+      var money = prompt("돈을 입력해주세요.", "");
+      if (money < price2) {
+        alert("돈이 부족합니다.");
+        location.reload();
+      } else {
+        msg = "선택한 과자: " + snack + "<br />" + "과자 가격: " + price2 + "<br />" + "거스름돈: " + (money - price2);
+        document.write(msg);
+      }
+    }
+
+    if (snack == snack3) {
+      var money = prompt("돈을 입력해주세요.", "");
+      if (money < price3) {
+        alert("돈이 부족합니다.");
+        location.reload();
+      } else {
+        msg = "선택한 과자: " + snack + "<br />" + "과자 가격: " + price3 + "<br />" + "거스름돈: " + (money - price3);
+        document.write(msg);
+      }
+    }
+
+
+
+    /*
+    if (money == "" && money < snack1 || money < snack2 || money < snack3) {
+        alert("돈이 부족합니다.");
+        location.reload();
+      } else if (money >= price1) {
+        document.write("과자 가격: " + snack1 + "<br />" + "거스름돈: " + (money - price1));
+      }
+    */
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
