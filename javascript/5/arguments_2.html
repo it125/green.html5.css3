@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1-2</title>
+    <title>Document</title>
     <script>
-        for (var i = 0; i < 10; i++) {
-            if (i % 2 == 0) {
-                document.write(i + "<br />");
+        function sum() {
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
             }
+            document.write(sum);
         }
+
+        sum(40, 30, 10, 50, 60);
     </script>
 </head>
 <body>

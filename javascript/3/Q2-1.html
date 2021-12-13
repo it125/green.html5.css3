@@ -7,42 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2-1</title>
     <script>
-        /*
-        for (var i = 1; i <= 1; i++) {
-            console.log("*");
-            document.write("*");
-        }
-        document.write("<br />");
-
-        for (var i = 1; i <= 2; i++) {
-            console.log("*");
-            document.write("*");
-        }
-        document.write("<br />");
-
-        for (var i = 1; i <= 3; i++) {
-            console.log("*");
-            document.write("*");
-        }
-        document.write("<br />");
-
-        for (var i = 1; i <= 4; i++) {
-            console.log("*");
-            document.write("*");
-        }
-        document.write("<br />");
-
-        for (var i = 1; i <= 5; i++) {
-            console.log("*");
-            document.write("*");
-        }
-        */
-
-        for (var i = 1; i <= 5; i++) {
-            document.write("*");
-        }
+        for (var i = 0; i < 5; i++) {
+        var triangle = '';  // 초기화
         
-
+        for (var j = 0; j <= i; j++) {
+            triangle += '*';
+        }
+        console.log(triangle);
+    }
     </script>
 </head>
 
