@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        const myFunc1 = (name, age) => {
+            return `안녕 ${name}, 너의 나이는 ${age}살이다.`;
+        }
+        console.log(myFunc1('이름', 39));
+
+        const myFunc2 = (name, height, weight) => {
+            return `${name}의 키는 ${height}cm이고, 몸무게는 ${weight}kg입니다.`;
+        }
+        console.log(myFunc2('이름', 160, 50));
+        
+        var name = prompt("당신의 이름은?", "");
+        var age = prompt("당신의 나이는?", "");
+        const myFunc3 = (name, age) => {
+            return `${age}세 ${name}님 반갑습니다.`;
+        }
+        console.log(myFunc3(name, age));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
