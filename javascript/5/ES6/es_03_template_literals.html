@@ -17,13 +17,22 @@
         }
         console.log(myFunc2('이름', 160, 50));
         
-        var name = prompt("당신의 이름은?", "");
-        var age = prompt("당신의 나이는?", "");
-        const myFunc3 = (name, age) => {
-            return `${age}세 ${name}님 반갑습니다.`;
-        }
-        console.log(myFunc3(name, age));
+        // var name = prompt("당신의 이름은?", "");
+        // var age = prompt("당신의 나이는?", "");
+        // const myFunc3 = (name, age) => {
+        //     return `${age}세 ${name}님 반갑습니다.`;
+        // }
+        // console.log(myFunc3(name, age));
 
+        var name = prompt("이름을 입력하세요.", "");
+        const myFunc4 = (name) => {
+            if(name == "홍길동") {
+                return `${name}님은 VIP회원입니다.`;
+            } else {
+                return `${name}님은 일반회원입니다.`;
+            }
+        }
+        alert(myFunc4(name))
     </script>
 </head>
 <body>
