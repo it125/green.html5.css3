@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const myFunc1 = (name, age) => {
+            return `안녕 ${name}, 너의 나이는 ${age}살이다.`;
+        }
+        console.log(myFunc1('이름'));
+
+        const myFunc2 = (name, age) => {
+            return `안녕 ${name}, 너의 나이는 ${age}살이다.`;
+        }
+        console.log(myFunc2('이름', 350));
+
+        const myFunc3 = (name, age = 46) => {
+            return `안녕 ${name}, 너의 나이는 ${age}살이다.`;
+        }
+        console.log(myFunc3('이름'));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var num1 = Number(prompt("첫 번째 숫자", "")); 
+        var num1 = Number(prompt("첫 번째 숫자", ""));
         var num2 = Number(prompt("두 번째 숫자", ""));
 
-        function sum(num1, num2) {
+
+        const sum = (num1, num2) => {
             var sum = num1 + num2;
             return sum;
         }
-        document.write("덧셈: " + sum(num1, num2) + "<br />");
+        document.write(`덧셈: ${sum(num1, num2)} <br />`)
 
-        function sub(num1, num2) {
-            var sub = num1 - num2;
+        const sub = (num1, num2) => {
+            var sub = num1 - num2
             return sub;
         }
-        document.write("뺄셈: " + sub(num1, num2) + "<br />");
+        document.write(`뺄셈: ${sub(num1, num2)} <br />`)
 
-        function mul(num1, num2) {
+        const mul = (num1, num2) => {
             var mul = num1 * num2;
             return mul;
         }
-        document.write("곱셈: " + mul(num1, num2) + "<br />");
+        document.write(`곱셈: ${mul(num1, num2)} <br />`)
 
-        function div(num1, num2) {
+        const div = (num1, num2) => {
             var div = num1 / num2;
             return div;
-        }        
-        document.write("나눗셈: " + div(num1, num2) + "<br />");
+        }
+        document.write(`덧셈: ${div(num1, num2)} <br />`)
 
 
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
