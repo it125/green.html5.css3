@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var weather = {
+        //     degree: 10,
+        //     wind: 30,
+        //     degreeShow: function() {
+        //         document.write(`온도: ${this.degree}, `);
+        //     },
+        //     windShow: function() {
+        //         document.write(`바람: ${this.wind}`);
+        //     }
+        // }
+
+        // weather.degreeShow();
+        // weather.windShow();
+
+        function Weather(degree, wind) {
+            this.degree = degree;
+            this.wind = wind;
+        }
+        Weather.prototype.degreeShow = function() {
+            document.write(`온도: ${this.degree}ºC <br />`);
+        }
+        Weather.prototype.windShow = function() {
+            document.write(`바람: ${this.wind}m/s <br />`);
+        }
+        const weather1 = new Weather(20, 30);
+        weather1.degreeShow();
+        weather1.windShow();
+
+        const weather2 = new Weather(-3, 60);
+        weather2.degreeShow();
+        weather2.windShow();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
