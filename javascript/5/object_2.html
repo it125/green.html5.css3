@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성 두 번째 방법</title>
+    <script>
+        var tv = {
+            color: "black",
+            size: 50,
+            printInfo: function () {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+            }
+        }
+
+        tv.printInfo();
+        
+        tv.color = "white";
+        document.write(`<br /> ${tv.color} & ${tv.size}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

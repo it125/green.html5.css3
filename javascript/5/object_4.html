@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var weather = {
+            degree: 10,
+            wind: 30,
+            degreeShow: function() {
+                document.write(`온도: ${this.degree}, `); // ${weather.degree} 형식으로 써도 됨.
+            },
+            windShow: function() {
+                document.write(`바람: ${this.wind}`);
+            }
+        };
+
+        weather.degreeShow();
+        weather.windShow();
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

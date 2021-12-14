@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 생성 첫 번째 방법</title>
+    <script>
+        var tv = new Object(); // 객체 생성
+
+        tv.color = "black";
+        tv.size = 50; // 속성, 속성값 지정 
+
+        tv.printInfo = function(/* 매개변수 */) {
+            document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+        } // 메소드 생성(기능) -> 함수를 생성만 한 것.
+
+        tv.printInfo(); // 함수 호출(객체.함수명)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
