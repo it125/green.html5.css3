@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class TV {
+            constructor(color, size, price) {
+                this.color = color;
+                this.size = size;
+                this.price = price;
+            }
+
+            printInfo() {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size}, 가격: ${this.size} <br /><br />`);
+            }
+        }
+
+        class LgTV extends TV {
+            printLG() {
+                document.write(`LG TV 입니다. <br />`);
+            }
+        }
+
+        class SamsungTV extends TV {
+            printSamsung() {
+                document.write(`SAMSUNG TV 입니다. <br />`);
+            }
+        }
+
+        const lg = new LgTV("black", 80, 1000);
+        const sam = new SamsungTV("grey", 70, 1000);
+
+        lg.printLG();
+        lg.printInfo();
+
+        sam.printSamsung();
+        sam.printInfo();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
