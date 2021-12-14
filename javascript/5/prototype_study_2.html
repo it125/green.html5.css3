@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Car(color, speed, price) {
+            this.color = color;
+            this.speed = speed;
+            this.price = price;
+        }
+
+        Car.prototype.carInfo = function() {
+            document.write(`색상: ${this.color}, 속도: ${this.speed}, 가격: ${this.price} <br />`);
+        }
+
+        var car1 = new Car("grey", 90, 1000);
+        car1.carInfo();
+        var car2 = new Car("blue", 80, 2000);
+        car2.carInfo();
+        var car3 = new Car("red", 90, 3000);
+        car3.carInfo();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

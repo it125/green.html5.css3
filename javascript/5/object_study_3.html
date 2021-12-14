@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function Dog(color, weight) {
+            this.color = color;
+            this.weight = weight;
+            this.dogInfo = function () {
+                document.write(`색상: ${this.color}, 무게: ${this.weight} <br />`);
+            }
+        }
+
+        var dog1 = new Dog("white", 10);
+        dog1.dogInfo();
+
+        var dog2 = new Dog("brown", 8);
+        dog2.dogInfo();
+
+        var dog3 = new Dog("white", 6);
+        dog1.dogInfo();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

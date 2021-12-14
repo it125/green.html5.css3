@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var car = {
+            color: prompt("색상", ""),
+            speed: 90,
+            price: 1000,
+            colorShow: function() {
+                document.write(`색상: ${this.color}, `);
+            },
+            speedShow: function() {
+                document.write(`속도: ${this.speed}, `);
+            },
+            priceShow: function() {
+                document.write(`가격: ${this.price}`)
+            }
+        }
+
+        car.colorShow();
+        car.speedShow();
+        car.priceShow();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function TV(colorV, sizeV) {
+            this.color = colorV;
+            this.size = sizeV;
+        }
+
+        TV.prototype.printInfo = function() {
+            document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+        }
+
+        /* 추가
+        TV.prototype.printInfo = function() {
+            document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+        }
+        */
+
+        TV.prototype.price = 2000; // 값도 프로토타입 사용할 수 있음. ES5에서 자주 사용됐었음.
+
+        var television1 = new TV("gray", 60);
+        television1.printInfo();
+        document.write(`${television1.price} <br/ >`);
+
+        var television2 = new TV("red", 40);
+        television2.printInfo();
+        document.write(`${television2.price} <br/ >`);
+
+        var television3 = new TV("blue", 40);
+        television3.printInfo();
+        document.write(`${television3.price} <br/ >`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

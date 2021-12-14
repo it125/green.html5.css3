@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function TV(colorV, sizeV) {
+            this.color = colorV;
+            this.size = sizeV;
+            this.printInfo = function() {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+            }
+        }
+
+        var television1 = new TV("gray", 60);
+        television1.printInfo();
+
+        var television2 = new TV("red", 40);
+        television2.printInfo();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

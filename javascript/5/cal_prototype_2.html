@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Cal(num1, num2) {
+            this.num1 = Number(num1);
+            this.num2 = Number(num2);
+        }
+
+        Cal.prototype.sum = function() {
+            var sum = this.num1 + this.num2;
+            return sum;
+        }
+        
+        Cal.prototype.sub = function() {
+            var sub = this.num1 - this.num2;
+            return sub;
+        }
+
+        Cal.prototype.mul = function() {
+            var mul = this.num1 * this.num2;
+            return mul;
+        }
+        
+        Cal.prototype.div = function() {
+            var div = this.num1 / this.num2;
+            return div;
+        }
+        
+        Cal.prototype.calResult = function() {
+            var result = "";
+            result += (`덧셈: ${this.sum()} <br />`);
+            result += (`뺄셈: ${this.sub()} <br />`);
+            result += (`곱셈: ${this.mul()} <br />`);
+            result += (`나눗셈: ${this.div()} <br />`);
+            return result;
+        }
+        
+        var cal = new Cal(prompt("첫 번째 숫자", "0"), prompt("두 번째 숫자", "0"));
+        document.write(cal.calResult());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
