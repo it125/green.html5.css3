@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자객체</title>
+    <script>
+        var userName = prompt("당신의 영문 이름은?", "");
+
+        var upperName = userName.toUpperCase();
+        document.write(`${upperName}<br />`);
+
+        var userNum = prompt("당신의 연락처는?", "");
+        /*
+        010-1111-2222
+        0: 0
+        1: 1
+        2: 0
+        3: 1 
+        4: 1 
+        5: 1
+        6: 1
+        7: 1
+        8: 2
+        9: 2
+        10: 2
+        11: 2
+        userNum.length = 12
+        12 - 4 = 8
+        */
+        var result = `${userNum.substring(0, userNum.length - 4)} ****`;
+        document.write(`${result}<br />`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

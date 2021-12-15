@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자객체</title>
+    <script>
+        var t = "Hello Thank you good luck to you";
+        for (i in t) {
+            document.write(`${i} => ${t[i]}<br />`);
+        }
+
+        document.write(`${t.charAt(16)}<br />`);
+        document.write(`${t.indexOf("you")}<br />`);
+        document.write(`${t.indexOf("you", 16)}<br />`);
+        document.write(`${t.lastIndexOf("you")}<br />`);
+        document.write(`${t.lastIndexOf("you")}<br />`);
+        document.write(`${t.match("Thank you")}<br />`);
+        document.write(`${t.search("luck")}<br />`);
+        document.write(`${t.search("30")}<br />`);
+        document.write(`${t.substr(21, 2)}<br />`);
+        document.write(`${t.substring(6, 11)}<br />`); // 여섯번째 인덱스부터 열한번째 인덱스 이전까지의 문자열 반환
+        document.write(`${t.replace("you", "me")}<br />`);
+        document.write(`${t.replace("Thank", "Happy")}<br />`);
+        document.write(`${t.toLowerCase()}<br />`);
+        document.write(`${t.toUpperCase()}<br />`);
+
+        var s = t.split(" ");
+        console.log(s);
+        /*
+        0: "Hello"
+        1: "Thank"
+        2: "you"
+        3: "good"
+        4: "luck"
+        5: "to"
+        6: "you"
+        */
+        document.write(`${s[0]}<br />`);
+        document.write(`${s[4]}<br />`);
+
+        var str = "ABC";
+        var t = str.charCodeAt(1);
+        document.write(`${t} <br />`);
+        document.write(`${String.fromCharCode(66)} <br />`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
