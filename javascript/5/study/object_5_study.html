@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+    <script>
+        class TV {
+            constructor(color, size) {
+                this.color = color;
+                this.size = size;
+            }
+            printInfo() {
+                document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+            }
+        }
+
+        let tv = new TV("black", 50);
+        tv.printInfo();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

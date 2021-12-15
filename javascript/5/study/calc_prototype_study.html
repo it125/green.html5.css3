@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Calc(num1, num2) {
+            this.num1 = Number(num1);
+            this.num2 = Number(num2);
+        }
+
+        Calc.prototype.add = function () {
+            var add = this.num1 + this.num2;
+            return add;
+        }
+
+        Calc.prototype.sub = function () {
+            var sub = this.num1 - this.num2;
+            return sub;
+        }
+
+        Calc.prototype.mul = function () {
+            var mul = this.num1 * this.num2;
+            return mul;
+        }
+
+        Calc.prototype.div = function () {
+            var div = this.num1 / this.num2;
+            return div;
+        }
+
+        Calc.prototype.calcResult = function () {
+            document.write(`덧셈: ${this.add()} <br /> 뺄셈: ${this.sub()} <br /> 곱셈: ${this.mul()} <br /> 나눗셈: ${this.div()}`);
+        }
+
+        var calc = new Calc(prompt("첫 번째 숫자", "0"), prompt("두 번째 숫자", "0"));
+        calc.calcResult();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
