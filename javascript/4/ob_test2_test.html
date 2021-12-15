@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        window.open("winpopup.html", "pop1", "width=300, height=400, left=300, top=50");
+        var menu = ["짜장면", "돈까스", "된장국", "김치찌개", "회덮밥"];
+        var menuNum = Math.floor(Math.random()*5);
+        console.log(menuNum);
+        var result = menu[menuNum];
+        console.log(result);
+        document.write(result);
     </script>
 </head>
 <body>
-    <h1>이지스 퍼블리싱</h1>
+    
 </body>
 </html>
