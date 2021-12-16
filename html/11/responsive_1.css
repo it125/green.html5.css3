@@ -6,6 +6,9 @@
     padding: 0;
     font: normal 15px 'Noto Sans KR Light';
 }
+::selection {
+    background: goldenrod;
+}
 a {
     text-decoration: none !important;
 }
@@ -21,10 +24,6 @@ ul {
     margin: 0 auto;
 }
 
-#container::selection {
-    background:;
-}
-
 header {
     background: gray;
 }
@@ -38,8 +37,7 @@ section {
 }
 
 /* 미디어쿼리 */
-@media screen and (max-width: 767px) {
-    /* 0-767px */
+@media screen and (max-width: 767px) { /* 0-767px */
     section > article {
         float: none;
         width: 100%;
@@ -56,20 +54,9 @@ section {
         background: purple;
         height: 900px;
     }
-
-    footer {
-        height: 100px;
-        background: red;
-    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 959px) {
-    /* 767-959px */
-
-}
-
-@media screen and (min-width: 960px) {
-    /* 960px- */
+@media screen and (min-width: 768px) and (max-width: 959px) { /* 767-959px */
     section > article {
         float: left;
     }
@@ -87,9 +74,29 @@ section {
         background: purple;
         height: 900px;
     }
+}
 
-    footer {
-        height: 100px;
-        background: red;
+@media screen and (min-width: 960px) { /* 960px- */
+    section > article {
+        float: left;
     }
+
+    section > article:nth-child(1) {
+        width: 300px;
+        color: #fff;
+        background: green;
+        height: 900px;
+    }
+
+    section > article:nth-child(2) {
+        width: 300px;
+        color: #fff;
+        background: purple;
+        height: 900px;
+    }
+}
+
+footer {
+    height: 100px;
+    background: red;
 }
