@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* main contents */
+#main_content {
+    background: #D8D8D8;
+}
+
+#main_content > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+#main_content > #main_top div {
+    text-align: center;
+}
+
+/* main_container weather map (기상 레이더) */
+#main_content > #main_container > #main_section > #weather_map {
+    height: 400px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+#main_content > #main_container > #main_section > #weather_map > #map {
+    width: 90%;
+    height: 360px;
+    z-index: 0 !important; /* 카카오 맵(자체가 index: 1;설정 되어 있음) 때문에 지도 index 반드시 강제 지정 */ 
+    margin: 0 auto;
+}
+
+/* main_container weather location (기상 상태) */
+#main_content > #main_container > #main_section > #weather_location {
+    height: 400px;
+    margin-bottom: 20px;
+    background: #D8D8D8;
+}
+
+#main_content > #main_container > #main_section > #weather_location a {
+    display: inline-block;
+    width: calc(50% - 8px); /* 각각의 a태그에 좌우로 2px씩 margin 값이 있기 때문에 8px을 빼줌. */
+    height: 51px;
+    background: white;
+    margin: 2px;
+    line-height: 51px;
+}
+
+#main_content > #main_container > #main_section > #weather_location a span {
+    display: inline-block;
+    font-size: 18px;
+}
+
+#main_content > #main_container > #main_section > #weather_location a span:nth-child(1) {
+    width: 60%;
+}
+
+#main_content > #main_container > #main_section > #weather_location a span:nth-child(2) {
+    width: 20%;
+}
+
+#main_content > #main_container > #main_section > #weather_location a span:nth-child(3) {
+    width: 15%;
+}
+
+#main_content > #main_container > #main_section > #weather_location a img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+}
+
+/* weather add */
+#main_content > #main_container > #main_section > #weather_add {
+    height: 50px;
+    margin-bottom: 20px;
+    background: white;
+    line-height: 50px;
+}
+
+/* main section 공통 */
+#main_content > #main_container > #main_section {
+    width: 730px;
+    float: left;
+}
+
+/* main aside */
+#main_content > #main_container > #main_aside {
+    width: 210px;
+    float: right;
+}
