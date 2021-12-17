@@ -23,7 +23,7 @@
 }
 
 #main_content > #main_container > #main_section > #weather_map > #map {
-    width: 90%;
+    width: 93%;
     height: 360px;
     z-index: 0 !important; /* 카카오 맵(자체가 index: 1;설정 되어 있음) 때문에 지도 index 반드시 강제 지정 */ 
     margin: 0 auto;
@@ -87,4 +87,42 @@
 #main_content > #main_container > #main_aside {
     width: 210px;
     float: right;
+}
+
+@media screen and (max-width: 767px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #main_section {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #main_section > article {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #main_section > #weather_location a {
+        width: 100%;
+    }
+
+    #main_content > #main_container > aside {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #main_section {
+        width: calc(100% - 210px); /* aside의 width길이(210px) 만큼 빼줌. */ 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
 }
