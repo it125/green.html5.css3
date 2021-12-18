@@ -1,0 +1,237 @@
+@charset "UTF-8";
+/* 초기화 */
+/* 초기화  */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Noto Sans KR Light', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    border: 0;
+}
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    background: #fff;
+}
+
+#header .inner {
+    position: relative;
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
+#header h1 {
+    float: left;
+    padding: 53px 0;
+    line-height: 1;
+    font-size: 1em;
+}
+
+#header h1 a {
+    display: block;
+    width: 196px;
+    height: 16px;
+    background: url("../images/logo.svg") no-repeat 50% 50%;
+    background-size: auto 16px;
+    text-indent: -999em;
+}
+
+#header #gnb {
+    overflow: hidden;
+    float: right;
+}
+
+#header #gnb ul li {
+    float: left;
+    margin-left: 65px;
+    padding: 51px 0;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+#header #gnb ul li a {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #666;
+    box-sizing: border-box;
+}
+
+#header .bars1, 
+.bars2 {
+  display: none;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    padding: 57px 15px 162px;
+    border-top: 1px solid #d6d6d6;
+    background: #fff;
+}
+
+#footer address,
+p {
+    font-style: unset;
+    font-size: 0.875em;
+    line-height: 2;
+    color: #999;
+}
+
+#footer .sns {
+    margin-bottom: 52px;
+}
+
+#footer .sns ul li {
+    display: inline-block;
+    margin: 0 32px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #666;
+    vertical-align: middle;
+}
+
+#footer .sns ul li a::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    background: url("../images/ico_package.png") no-repeat;
+    vertical-align: top;
+}
+
+#footer .sns ul li.instagram a::before {
+    width: 16px;
+    background-position: 0 -50px;
+}
+
+#footer .sns ul li.facebook a::before {
+    width: 9px;
+    background-position: -50px -50px;
+}
+
+#footer .sns ul li.twitter a::before {
+    width: 20px;
+    background-position: -100px -50px;
+}
+
+#footer .sns ul li.youtube a::before {
+    width: 23px;
+    background-position: -150px -50px;
+}
+
+#footer .sns ul li.newsletter a::before {
+    width: 18px;
+    background-position: 0 -100px;
+}
+
+#footer .snsIcon {
+    display: none;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 767px) {
+    #header h1 {
+        float: none;
+        padding: 25px 0;
+    }
+    #header h1 a {
+        margin: 0 auto;
+        background-size: auto 12px;
+    }
+    #header #gnb {
+        display: none;
+    }
+    #header .bars1{
+      display: inline-block;
+      position: absolute;
+      bottom: 22px;
+      left: 30px;
+    }
+    #header .bars2{
+      display: inline-block;
+      position: absolute;
+      bottom: 22px;
+      right: 30px;
+    }
+    #footer .sns ul {
+        display: none;
+    }
+
+    #footer .snsIcon {
+        display: inline-block;
+        position: relative;
+        bottom: 25px;
+    }
+    #footer .snsIcon span {
+        padding-left: 16px;
+    }
+    #footer {
+        text-align: center;
+        padding: 10px 0 30px;
+        border-top: 1px solid #d6d6d6;
+        background: #fff;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #header h1 {
+        float: none;
+        padding: 30px 0;
+    }
+    #header h1 a {
+        margin: 0 auto;
+    }
+    #header #gnb {
+        display: none;
+    }
+    #header .bars1{
+      display: inline-block;
+      position: absolute;
+      bottom: 25px;
+      left: 30px;
+    }
+    #header .bars2{
+      display: inline-block;
+      position: absolute;
+      bottom: 25px;
+      right: 30px;
+    }
+    #footer .sns ul {
+        display: none;
+    }
+    #footer .snsIcon {
+        display: inline-block;
+        position: relative;
+        bottom: 25px;
+    }
+    #footer .snsIcon span {
+        padding-left: 16px;
+    }
+    #footer {
+        text-align: center;
+        padding: 10px 0 30px;
+        border-top: 1px solid #d6d6d6;
+        background: #fff;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1024px) {}

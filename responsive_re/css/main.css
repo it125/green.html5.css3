@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* section01 */
+#section01 {
+    position: relative;
+    overflow: hidden;
+    max-width: 1640px;
+    margin: 0 auto 120px;
+}
+
+#section01 figure > img {
+    width: 100%;
+    height: auto;
+}
+
+#section01 .exInfo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 65px 4.75609756097561%;
+    box-sizing: border-box;
+    color: #222;
+}
+
+#section01 .exInfo .artist {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+#section01 .exInfo .title {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 3.5em;
+    line-height: 1.285714285714286;
+    letter-spacing: 0.025em;
+}
+
+#section01 .exInfo .date {
+    display: block;
+    letter-spacing: 0.1em;
+}
+
+#section02 {
+    display: block;
+    max-width: 1640px;
+    margin: 0 auto 54px;
+    padding: 0 15px;
+}
+
+#section02 ul {
+    display: inline-block;
+    min-width: 103.902439024390244%;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+#section02 ul li {
+    float: left;
+    width: 31%;
+    margin-bottom: 50px;
+    padding-left: 3.755868544600939%;
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+}
+
+#section02 ul li a {
+    display: block;
+}
+
+#section02 ul li figure {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+#section02 ul li figure img {
+    width: 100%;
+    height: auto;
+}
+
+#section02 ul li .news {
+    display: block;
+    font-size: 0.875em;
+    color: #666;
+    letter-spacing: 0.075em;
+}
+#section02 ul li .title {
+    display: block;
+    overflow: hidden;
+    max-height: 3em;
+    margin: 11px 0 0;
+    text-overflow: ellipsis;
+    font-size: 1.25em;
+    line-height: 1.5;
+    color: #222;
+    letter-spacing: 0.05em;
+}
+
+#section03 {
+    position: relative;
+    max-width: 1640px;
+    margin: 0 auto 120px;
+    padding: 0 15px;
+}
+
+#section03 a {
+    display: table;
+    text-decoration: none;
+    width: 100%;
+}
+
+#section03 figure {
+    display: table-cell;
+    position: relative;
+    width: 65.365853658536585%;
+}
+
+#section03 figure img {
+    width: 100%;
+    height: auto;
+}
+
+#section03 .essayInfo {
+    display: table-cell;
+    width: 34.634146341463415%;
+    padding: 38px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#section03 span:nth-child(1) {
+    display: block;
+    margin-bottom: 41px;
+    color: #666;
+    letter-spacing: 0.075em;
+}
+
+#section03 span:nth-child(2) {
+    display: block;
+    margin-bottom: 43px;
+    font-size: 2.75em;
+    font-family: 'ArnoPro', 'sans-serif';
+    line-height: 1.181818181818182;
+    color: #222;
+    letter-spacing: -0.002em;
+}
+
+#section03 span:nth-child(3) {
+    display: block;
+    overflow: hidden;
+    max-width: 380px;
+    max-height: 10.666666666666667em;
+    margin: 0 auto;
+    font-size: 1.125em;
+    line-height: 1.777777777777778;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+#section04 .post {
+    max-width: 1640px;
+    margin: 0 auto 54px;
+    padding: 0 15px;
+}
+
+#section04 .post ul {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+#section04 .post ul li {
+    float: left;
+    width: 25%;
+    margin-bottom: 50px;
+    padding-left: 3.755868544600939%;
+    box-sizing: border-box;
+}
+
+#section04 .post ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+#section04 .post ul li figure {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+#section04 .post ul li figure img {
+    width: 100%;
+    height: auto;
+}
+
+#section04 .post ul li .category {
+    display: block;
+    font-size: 0.875em;
+    color: #666;
+    letter-spacing: 0.075em;
+}
+
+#section04 .post ul li .artist {
+    overflow: hidden;
+    max-height: 3em;
+    margin: 11px 0 0;
+    text-overflow: ellipsis;
+    font-size: 1.25em;
+    line-height: 1.5;
+    color: #222;
+    letter-spacing: 0.05em;
+}
+
+#section04 .post ul li .ex {
+    display: block;
+    margin: 8px 0 2px;
+    font-size: 0.875em;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#section04 .more {
+    margin-bottom: 120px;
+}
+
+#section04 .more a {
+    display: block;
+    position: relative;
+    width: 182px;
+    margin: 0 auto;
+    padding: 21px 24px 19px;
+    border: 1px solid #d6d6d6;
+    text-decoration: none;
+    font-weight: 300;
+    color: #666;
+    box-sizing: border-box;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (max-width: 767px) {
+    #section01 {
+        position: relative;
+        overflow: hidden;
+        max-width: 1640px;
+        height: 500px;
+        margin: 0 auto 120px;
+    }
+
+    #section01 figure img {
+        size: 100vw;
+    }
+
+    #section01 .exInfo {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 35px 4.75609756097561%;
+        box-sizing: border-box;
+        color: #222;
+    }
+
+    #section01 .exInfo .artist {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+    }
+
+    #section01 .exInfo .title {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 1.6em;
+        letter-spacing: 0.025em;
+    }
+
+    #section01 .exInfo .date {
+        display: block;
+        letter-spacing: 0.1em;
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #section01 .exInfo {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 65px 4.75609756097561%;
+        box-sizing: border-box;
+        color: #222;
+    }
+
+    #section01 .exInfo .artist {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+    }
+
+    #section01 .exInfo .title {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 2em;
+        letter-spacing: 0.025em;
+    }
+
+    #section01 .exInfo .date {
+        display: block;
+        letter-spacing: 0.1em;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
