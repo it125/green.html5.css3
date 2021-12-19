@@ -22,38 +22,35 @@ img {
 /* header */
 #header {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     z-index: 200;
     width: 100%;
-    background: #fff;
+    background-color: #fff;
 }
-
 #header .inner {
     position: relative;
     max-width: 1640px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 #header h1 {
     float: left;
-    padding: 53px 0;
-    line-height: 1;
-    font-size: 1em;
+    padding: 40px 20px;
 }
 
-#header h1 a {
-    display: block;
-    width: 196px;
-    height: 16px;
-    background: url("../images/logo.svg") no-repeat 50% 50%;
-    background-size: auto 16px;
-    text-indent: -999em;
+#header .bars1, 
+.bars2 {
+    display: none;
 }
 
 #header #gnb {
-    overflow: hidden;
     float: right;
+}
+
+#header #gnb ul {
+    overflow: hidden;
 }
 
 #header #gnb ul li {
@@ -61,20 +58,6 @@ img {
     margin-left: 65px;
     padding: 51px 0;
     font-size: 1em;
-    letter-spacing: 0.1em;
-}
-
-#header #gnb ul li a {
-    display: block;
-    position: relative;
-    text-align: center;
-    color: #666;
-    box-sizing: border-box;
-}
-
-#header .bars1, 
-.bars2 {
-  display: none;
 }
 
 /* footer */
@@ -146,92 +129,119 @@ p {
 
 /* 미디어쿼리 */
 @media screen and (max-width: 767px) {
-    #header h1 {
-        float: none;
-        padding: 25px 0;
+    #header {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 200;
+        width: 100%;
+        padding-bottom: 35px;
+        background-color: #fff;
     }
-    #header h1 a {
+    #header h1 {
+        padding: 0px 0px;
+        position: relative;
+        top: 17px;
+        width: 100%;
         margin: 0 auto;
-        background-size: auto 12px;
+        float: none;
+    }
+    #header .bars1, 
+    .bars2 {
+        display: block;
+    }
+    #header .bars1 {
+        position: absolute;
+        top: 33px;
+        left: 20px;
+    }
+    #header .bars2 {
+        position: absolute;
+        top: 33px;
+        right: 20px;
     }
     #header #gnb {
         display: none;
     }
-    #header .bars1{
-      display: inline-block;
-      position: absolute;
-      bottom: 22px;
-      left: 30px;
-    }
-    #header .bars2{
-      display: inline-block;
-      position: absolute;
-      bottom: 22px;
-      right: 30px;
-    }
-    #footer .sns ul {
-        display: none;
-    }
-
-    #footer .snsIcon {
-        display: inline-block;
-        position: relative;
-        bottom: 25px;
-    }
-    #footer .snsIcon span {
-        padding-left: 16px;
-    }
     #footer {
         text-align: center;
-        padding: 10px 0 30px;
+        padding: 30px 15px 140px;
         border-top: 1px solid #d6d6d6;
         background: #fff;
     }
+    #footer .sns {
+        display: none;
+    }
+    #footer .snsIcon {
+        display: inline-block;
+        padding-bottom: 19px;
+    }
+    #footer .snsIcon span {
+        padding-left: 20px;
+    }
+    #footer .snsIcon span.instagram {
+        padding-left: 0;
+    }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    #header h1 {
-        float: none;
-        padding: 30px 0;
+    #header {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 200;
+        width: 100%;
+        padding-bottom: 35px;
+        background-color: #fff;
     }
-    #header h1 a {
+    #header h1 {
+        padding: 0px 0px;
+        position: relative;
+        top: 17px;
+        width: 100%;
         margin: 0 auto;
+        float: none;
+    }
+    #header .bars1, 
+    .bars2 {
+        display: block;
+    }
+    #header .bars1 {
+        position: absolute;
+        top: 33px;
+        left: 30px;
+    }
+    #header .bars2 {
+        position: absolute;
+        top: 33px;
+        right: 30px;
     }
     #header #gnb {
         display: none;
     }
-    #header .bars1{
-      display: inline-block;
-      position: absolute;
-      bottom: 25px;
-      left: 30px;
+    #footer {
+        text-align: center;
+        padding: 30px 15px 140px;
+        border-top: 1px solid #d6d6d6;
+        background: #fff;
     }
-    #header .bars2{
-      display: inline-block;
-      position: absolute;
-      bottom: 25px;
-      right: 30px;
-    }
-    #footer .sns ul {
+    #footer .sns {
         display: none;
     }
     #footer .snsIcon {
         display: inline-block;
-        position: relative;
-        bottom: 25px;
+        padding-bottom: 19px;
     }
     #footer .snsIcon span {
-        padding-left: 16px;
+        padding-left: 20px;
     }
-    #footer {
-        text-align: center;
-        padding: 10px 0 30px;
-        border-top: 1px solid #d6d6d6;
-        background: #fff;
+    #footer .snsIcon span.instagram {
+        padding-left: 0;
     }
-
-    
 
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+}
