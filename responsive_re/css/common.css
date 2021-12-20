@@ -37,7 +37,7 @@ img {
 
 #header h1 {
     float: left;
-    padding: 40px 20px;
+    padding: 35px 20px;
 }
 
 #header .bars1, 
@@ -141,7 +141,7 @@ p {
     #header h1 {
         padding: 0px 0px;
         position: relative;
-        top: 17px;
+        top: 10px;
         width: 100%;
         margin: 0 auto;
         float: none;
@@ -152,12 +152,12 @@ p {
     }
     #header .bars1 {
         position: absolute;
-        top: 33px;
+        top: 25px;
         left: 20px;
     }
     #header .bars2 {
         position: absolute;
-        top: 33px;
+        top: 25px;
         right: 20px;
     }
     #header #gnb {
@@ -186,7 +186,7 @@ p {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     #header {
         position: fixed;
         top: 0px;
@@ -199,7 +199,7 @@ p {
     #header h1 {
         padding: 0px 0px;
         position: relative;
-        top: 17px;
+        top: 10px;
         width: 100%;
         margin: 0 auto;
         float: none;
@@ -210,12 +210,12 @@ p {
     }
     #header .bars1 {
         position: absolute;
-        top: 33px;
+        top: 25px;
         left: 30px;
     }
     #header .bars2 {
         position: absolute;
-        top: 33px;
+        top: 25px;
         right: 30px;
     }
     #header #gnb {
