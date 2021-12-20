@@ -30,9 +30,8 @@ img {
 }
 #header .inner {
     position: relative;
-    max-width: 1640px;
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 #header h1 {

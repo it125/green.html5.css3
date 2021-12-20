@@ -1,14 +1,9 @@
 @charset "UTF-8";
-
-main {
-    display: block;
-}
-
 #section01 {
     position: relative;
     overflow: hidden;
-    max-width: 1640px;
-    margin: 0 auto 120px;
+    max-width: 1024px;
+    margin: 0 auto 70px;
 }
 
 #section01 img {
@@ -47,45 +42,42 @@ main {
 /* section02 */
 #section02 {
     overflow: hidden;
-    margin-bottom: 140px;
-}
-
-#section02 .exNews {
-    width: 100%;
-    height: auto;
+    max-width: 1024px;
     margin: 0 auto;
-    text-align: center;
+    margin-bottom: 70px;
 }
 
 #section02 .exNews ul {
+    overflow: hidden;
     display: inline-block;
-    /* overflow: hidden; */
+    vertical-align: top;
 }
 
-#section02 ul li {
-    display: inline-block;
-    padding: 30px;
+#section02 .exNews ul li {
+    float: left;
+    width: 300px;
+    padding-left: 30px;
+}
+#section02 .exNews ul li img {
+    width: 300px;
 }
 
-#section02 ul li span {
+#section02 .exNews ul li span.news {
     display: block;
-    text-align: left;
 }
 
-#section02 ul li .news {
-    font-size: 1em;
-    color: gray;
-}
-
-#section02 ul li .title {
-    font-size: 1.2em;
+#section02 .exNews ul li span.title {
+    display: block;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
 
 /* section03 */
 #section03 {
     position: relative;
-    max-width: 1640px;
-    margin: 0 auto 140px;
+    max-width: 1024px;
+    margin: 0 auto 70px;
     padding: 0 15px;
 }
 
@@ -131,6 +123,7 @@ main {
     max-height: 10em;
     color: #666;
     font-size: 1.1em;
+    letter-spacing: 0.02em;
 }
 
 /* section04 */
@@ -139,7 +132,7 @@ main {
 }
 
 #section04 .post {
-    max-width: 1640px;
+    max-width: 1024px;
     margin: 0 auto ;
     padding: 0 20px;
 }
@@ -211,9 +204,145 @@ main {
 
 /* 미디어쿼리 */
 @media screen and (max-width: 767px) {
+    #section01 {
+        overflow: hidden;
+        max-width: 1024px;
+        margin: 0 auto 80px;
+    }
+    
+    #section01 img {
+        width: 200%;
+        padding-top: 80px;
+    }
+    
+    #section01 .exInfo {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 60px 50px;
+    }
+
+    #section01 .exInfo .artist {
+        display: block;
+        font-size: 1.4em;
+        letter-spacing: 2px;
+    }
+    
+    #section01 .exInfo .title {
+        display: block;
+        font-size: 3em;
+        padding-bottom: 15px;
+        font-weight: 600;
+    } 
+    
+    #section01 .exInfo .date {
+        display: block;
+        font-size: 1em;
+        letter-spacing: 2px;
+    } 
+
+    #section03 a {
+        display: block;
+        width: 100%;
+    }
+
+    #section03 .essayInfo span:nth-child(1) {
+        display: block;
+        margin-bottom: 30px;
+        color: #666;
+        letter-spacing: 0.2em;
+        /* font-size: 0.5em; */
+    }
+    
+    #section03 .essayInfo span:nth-child(2) {
+        display: block;
+        margin-bottom: 41px;
+        color: #222;
+        font-size: 2.5em;
+    }
+    
+    #section03 .essayInfo span:nth-child(3) {
+        display: block;
+        overflow: hidden;
+        max-width: 380px;
+        margin: 0 auto;
+        max-height: 10em;
+        color: #666;
+        font-size: 1em;
+        letter-spacing: 0.02em;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #section01 {
+        overflow: hidden;
+        max-width: 1024px;
+        margin: 0 auto 80px;
+    }
+    
+    #section01 img {
+        width: 140%;
+        padding-top: 80px;
+    }
+
+    #section01 .exInfo {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 55px 50px;
+    }
+
+    #section01 .exInfo .artist {
+        display: block;
+        font-size: 1.4em;
+        letter-spacing: 2px;
+    }
+    
+    #section01 .exInfo .title {
+        display: block;
+        font-size: 3em;
+        padding-bottom: 15px;
+        font-weight: 600;
+    } 
+    
+    #section01 .exInfo .date {
+        display: block;
+        font-size: 1em;
+        letter-spacing: 2px;
+    } 
+
+    #section03 a {
+        display: block;
+        width: 100%;
+    }
+
+    #section03 .essayInfo span:nth-child(1) {
+        display: block;
+        margin-bottom: 30px;
+        color: #666;
+        letter-spacing: 0.2em;
+        /* font-size: 0.5em; */
+    }
+    
+    #section03 .essayInfo span:nth-child(2) {
+        display: block;
+        margin-bottom: 41px;
+        color: #222;
+        font-size: 2.5em;
+    }
+    
+    #section03 .essayInfo span:nth-child(3) {
+        display: block;
+        overflow: hidden;
+        max-width: 380px;
+        margin: 0 auto;
+        max-height: 10em;
+        color: #666;
+        font-size: 1em;
+        letter-spacing: 0.02em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
