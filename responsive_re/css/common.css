@@ -22,21 +22,20 @@ img {
 /* header */
 #header {
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     z-index: 200;
     width: 100%;
     background-color: #fff;
 }
 #header .inner {
-    position: relative;
     max-width: 1024px;
     margin: 0 auto;
 }
 
 #header h1 {
     float: left;
-    padding: 35px 20px;
+    padding: 35px 0px;
 }
 
 #header .bars1, 

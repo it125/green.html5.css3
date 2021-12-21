@@ -1,22 +1,24 @@
 @charset "UTF-8";
 #section01 {
     position: relative;
-    overflow: hidden;
     max-width: 1024px;
-    margin: 0 auto 70px;
+    margin: 0 auto 140px;
 }
 
-#section01 img {
+#section01 .exBox {
+    margin-top: 100px;
     width: 100%;
-    height: auto;
-    padding-top: 123px;
+}
+
+#section01 .exBox figure img {
+    width: 100%;
 }
 
 #section01 .exInfo {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 400px;
     padding: 65px 70px;
 }
 
@@ -41,25 +43,26 @@
 
 /* section02 */
 #section02 {
-    overflow: hidden;
     max-width: 1024px;
-    margin: 0 auto;
-    margin-bottom: 70px;
+    margin: 0 auto 140px;
 }
 
 #section02 .exNews ul {
     overflow: hidden;
-    display: inline-block;
-    vertical-align: top;
 }
 
 #section02 .exNews ul li {
     float: left;
-    width: 300px;
-    padding-left: 30px;
+    width: 33.3%;
 }
+/* 1024(341.333) 340 30 */
+
+#section02 .exNews ul li:nth-child(3) {
+    padding: 0;
+}
+
 #section02 .exNews ul li img {
-    width: 300px;
+    width: 100%;
 }
 
 #section02 .exNews ul li span.news {
@@ -77,7 +80,7 @@
 #section03 {
     position: relative;
     max-width: 1024px;
-    margin: 0 auto 70px;
+    margin: 0 auto 140px;
     padding: 0 15px;
 }
 
@@ -111,8 +114,7 @@
     display: block;
     margin-bottom: 41px;
     color: #222;
-    letter-spacing: -0.002em;
-    font-size: 2.8em;
+    font-size: 2.5em;
 }
 
 #section03 .essayInfo span:nth-child(3) {
@@ -138,10 +140,7 @@
 }
 
 #section04 .post ul {
-    display: inline-block;
-    min-width: 103%;
     overflow: hidden;
-    vertical-align: top;
 }
 
 #section04 .post ul li {
@@ -152,7 +151,6 @@
 }
 
 #section04 .post ul li figure {
-    position: relative;
     margin-bottom: 22px;
 }
 
@@ -219,20 +217,19 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 100%;
-        padding: 60px 50px;
+        padding: 35px 35px;
     }
 
     #section01 .exInfo .artist {
         display: block;
-        font-size: 1.4em;
+        font-size: 1.2em;
         letter-spacing: 2px;
     }
     
     #section01 .exInfo .title {
         display: block;
-        font-size: 3em;
-        padding-bottom: 15px;
+        font-size: 2em;
+        padding-bottom: 8px;
         font-weight: 600;
     } 
     
@@ -241,6 +238,10 @@
         font-size: 1em;
         letter-spacing: 2px;
     } 
+
+    #section01 .exBox {
+        margin: 0;
+    }
 
     #section03 a {
         display: block;
@@ -312,6 +313,10 @@
         font-size: 1em;
         letter-spacing: 2px;
     } 
+
+    #section01 .exBox {
+        margin: 0;
+    }
 
     #section03 a {
         display: block;
