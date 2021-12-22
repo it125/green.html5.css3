@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .img1 {
+            width: 100%; /* view-port기준 | 가변 이미지 기본 */
+        }
+
+        .img2 {
+            max-width: 100%; /* 이미지 원래 사이즈에 맞춤 */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="./image/jump.png" alt="이미지" class="img1">
+    <img src="./image/jump.png" alt="이미지" class="img2">
+</body>
+</html>
