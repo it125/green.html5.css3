@@ -27,7 +27,10 @@
         $(function() {
             $("#inner_1").find(".txt1").css("background-color", "lightgreen");
             $("#inner_1 p").filter(".txt2").css("background-color", "gold");
-            $("#inner_1 p").filter(".txt2").css("background-color", "gold");
+            $("#inner_2 p").filter(function(idx, obj) {
+                console.log(idx);
+                return idx % 2 == 0;
+            }).css("background-color", "yellow")
         })
     </script>
 </body>
