@@ -7,10 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <section class="box1">
+        <h2>제목1</h2>
+        <div>내용1</div>
+        <div>내용2</div>
+    </section>
+    <section class="box2">
+        <h1>제목2</h1>
+        <div>내용3</div>
+        <div>내용4</div>
+    </section>
     <script src="./jquery-3.6.0.min.js"></script>
     <script>
-        
+        $(function() {
+            $(".box1 h2").replaceWith("<p>replace method</p>");
+            $("<h3>Change</h3>").replaceAll("div");
+        });
     </script>
 </body>
 </html>

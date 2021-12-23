@@ -7,15 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <ul id="listZone">
-        <li>리스트</li>
+    <ul id="myList">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
     </ul>
     <script src="./jquery-3.6.0.min.js"></script>
     <script>
-        $(function() {
-            $("<li>appendTo</li>").appendTo("#listZone");
-            $("#listZone").prepend("<li>prepend</li>");
-        });
+        $("li:nth-child(3)").css("background", "yellow");
+        //$("#myList li").eq(2).css("background-color", "yellow");
     </script>
 </body>
 </html>

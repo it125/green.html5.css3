@@ -158,7 +158,7 @@
 }
 
 #section04 .post ul li figure {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 }
 
 #section04 .post ul li figure img {
@@ -175,10 +175,10 @@
 #section04 .post ul li .artist {
     display: block;
     max-width: 100%;
-    padding-bottom: 10px;
-    margin: 11px 0 0;
-    font-size: 1.3em;
-    white-space: nowrap;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 1.2em;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -307,16 +307,14 @@
     }
     
     #section03 .essayInfo {
-        width: 100%;
+        width: 1024px;
         margin: 0 auto;
     }
-
     #section03 .essayInfo span:nth-child(1) {
         display: block;
         margin-bottom: 30px;
         color: #666;
         letter-spacing: 0.2em;
-        /* font-size: 0.5em; */
     }
     
     #section03 .essayInfo span:nth-child(2) {
