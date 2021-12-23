@@ -376,13 +376,13 @@
     #section01 {
         overflow: hidden;
         max-width: 1024px;
-        height: 700px;
+        height: 750px;
         margin: 0 auto 80px;
     }
     
     #section01 img {
         width: 100%;
-        height: 700px;
+        height: 750px;
         padding-top: 80px;
     }
 
