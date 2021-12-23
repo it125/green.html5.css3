@@ -7,9 +7,27 @@
     <title>Document</title>
 </head>
 <body>
+    <p>
+        <img src="http://placehold.it/300x300" class="img1">
+    </p>
     <script src="./jquery-3.6.0.min.js"></script>
     <script>
-        
+        $(function() {
+            $(document).ready(function() {
+                var h1 = $(".img1").height();
+                console.log("ready :", h1);
+            });
+
+            // $(window).load(function() {
+            //     var h2 = $(".img1").height();
+            //     console.log("load :", h2);
+            // });
+
+            $(window).on("load", function() {
+                var h2 = $(".img1").height();
+                console.log("load :", h2);
+            });
+        });
     </script>
 </body>
 </html>
