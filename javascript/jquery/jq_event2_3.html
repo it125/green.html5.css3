@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="rel_site">
+        <option value="">사이트 선택</option>
+        <option value="www.google.com">Google</option>
+        <option value="www.naver.com">NAVER</option>
+        <option value="www.daum.net">DAUM</option>
+    </select>
+    <p class="txt"></p>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#rel_site").on("change", function() {
+                $(".txt").text($(this).val());
+            });
+        });
+    </script>
+</body>
+</html>

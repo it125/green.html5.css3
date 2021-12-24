@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <p class="btn_wrap">
+            <button class="btn_1">버튼1</button>
+        </p>
+        <p class="btn_wrap2">
+            <button class="btn_2">버튼2</button>
+        </p>
+    </div>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $(".btn_wrap").delegate(".btn_1.on", "mouseover focuse", function() {
+                alert("hello!");
+            });
+            $(".btn_1").addClass("on");
+            
+            $(document).one("mouseover focuse", ".btn_2.on", function() {
+                alert("welcome!");
+            });
+            $(".btn_2").addClass("on");
+        });
+    </script>
+</body>
+</html>
