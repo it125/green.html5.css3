@@ -188,10 +188,13 @@
     margin: 2px 0 2px;
     color: #666;
     font-size: 0.8em;
-    max-width: 100%;
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;    
+    text-overflow: ellipsis; */
+    overflow: hidden; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; /* 라인수 */ 
+    -webkit-box-orient: vertical; 
 }
 
 #section04 .more {
@@ -232,7 +235,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        padding: 35px 35px;
+        padding: 60px 60px;
     }
 
     #section01 .exInfo .artist {
@@ -243,14 +246,14 @@
     
     #section01 .exInfo .title {
         display: block;
-        font-size: 2em;
+        font-size: 3em;
         padding-bottom: 8px;
         font-weight: 600;
     } 
     
     #section01 .exInfo .date {
         display: block;
-        font-size: 1em;
+        font-size: 1.3em;
         letter-spacing: 2px;
     } 
 
@@ -279,10 +282,6 @@
 
     #section02 .exNews ul li figure {
         width: 100%;
-    }
-
-    #section02 .exNews li:first-child {
-    
     }
 
     #section02 .exNews li:nth-child(2) {
@@ -356,9 +355,6 @@
         padding-bottom: 5px;
         margin: 4px 0 0;
         font-size: 1em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     #section04 .post ul li .ex {
@@ -370,20 +366,24 @@
         overflow: hidden;
         text-overflow: ellipsis; 
     }
+
+    #section04 .more {
+        margin-bottom: 80px;
+        margin-top: 25px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     #section01 {
         overflow: hidden;
         max-width: 1024px;
-        height: 750px;
-        margin: 0 auto 80px;
     }
     
-    #section01 img {
-        width: 100%;
+    #section01 figure {
         height: 750px;
-        padding-top: 80px;
+    }
+    #section01 img {
+        height: 100%;
     }
 
     #section01 .exInfo {
@@ -474,9 +474,6 @@
         padding-bottom: 5px;
         margin: 4px 0 0;
         font-size: 1em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     #section04 .post ul li .ex {
@@ -489,6 +486,10 @@
         text-overflow: ellipsis; 
     }
     
+    #section04 .more {
+        margin-top: 30px;
+        margin-bottom: 90px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
