@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* font-family: "나눔스퀘어라운드"; */
 }
 
 a:link, a:hover, a:visited {
@@ -115,3 +116,151 @@ section:nth-child(odd) {
     }
 }
 
+/* header */
+.banner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/*  */
+.about {
+    line-height: 1.8;
+    padding: 20px 50px;
+}
+
+.msg p {
+    color: #ff6600;
+    font-family: serif, 'Noto Sans KR Thin';
+    font-weight: 700;
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.msg span {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+/*  */
+.intro {
+    padding: 20px 50px;
+}
+
+
+.section-title h3 {
+    font-size: 1.6em;
+    
+}
+
+.text {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px; /* */
+}
+
+.text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.img {
+    text-align: center;
+    display: none;
+}
+
+@media screen and (min-width:764px) {
+    .intro {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        flex: 2;
+    }
+
+    .img {
+        display: block;
+        flex: 1;
+    }
+
+    .img > img {
+        max-width: 250px;
+    }
+}
+
+/* 교육 프로그램 영역 */
+.program-list {
+    padding: 20px 50px;
+}
+
+.program-list h4 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.program {
+    padding: 30px;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+
+@media screen and (min-width:764px) {
+    .program-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .program {
+        flex-basis: 22%;
+    }
+}
+
+/* footer */
+.footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #34495e;
+}
+
+.footer-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    color: #fff;
+}
+
+.sns {
+    margin-top: 50px;
+}
+
+.sns a {
+    margin-right: 30px;
+}
+
+.sns a:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width:764px) {
+    .footer-info {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .contact {
+        flex: 2;
+    }
+    
+    .sns {
+        flex: 1;
+    }
+}
