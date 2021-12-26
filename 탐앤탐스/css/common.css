@@ -33,7 +33,7 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    padding-top: 45px;
+    padding-top: 55px;
 }
 
 #header #main_gnb ul {
@@ -42,7 +42,7 @@ img {
 
 #header #main_gnb ul li {
     float: left;
-    padding: 0 15px 0;
+    padding: 0 0 0 30px;
 }
 
 #header #main_lnb {
@@ -53,10 +53,81 @@ img {
 
 #header #main_lnb ul {
     overflow: hidden;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 #header #main_lnb ul li {
     float: left;
-    padding: 0 10px 0;
+    padding: 0 0 0 15px;
+}
+
+/* footer */
+#footer {
+    background-color: rgb(231, 231, 231);
+}
+
+#footer .f_wrap {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    padding: 50px 0;
+}
+
+#footer .footer1 {
+    width: 20%;
+}
+
+#footer .footer1 p:first-child {
+    font-size: 1.3em;
+}
+
+#footer .footer1 p:last-child {
+    font-size: 1.8em;
+}
+
+#footer .footer2 {
+    width: 60%;
+}
+
+#footer .footer2 ul {
+    display: flex;
+    flex-flow: wrap;
+}
+
+#footer .footer2 ul li {
+    padding-right: 15px;
+}
+
+#footer .footer2 .address {
+    margin-top: 30px;
+}
+
+#footer .footer2 address {
+    font-style: unset;
+}
+
+#footer .footer2 .copyright {
+    margin-top: 30px;
+}
+
+#footer .footer3 {
+    width: 20%;
+}
+
+#footer .footer3 span {
+    font-size: 1.2em;
+    padding-right: 10px;
+}
+
+#footer .footer3 ul {
+    overflow: hidden;
+    display: inline-block;
+    height: auto;
+    vertical-align: top;
+}
+
+#footer .footer3 ul li {
+    float: left;
+    padding-right: 10px;
 }
