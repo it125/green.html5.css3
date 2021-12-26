@@ -68,14 +68,13 @@ img {
 
 #footer .f_wrap {
     display: flex;
-    position: relative;
     margin: 0 auto;
     width: 1024px;
     padding: 50px 0;
 }
 
 #footer .footer1 {
-    width: 20%;
+    width: 40%;
 }
 
 #footer .footer1 p:first-child {
@@ -87,12 +86,13 @@ img {
 }
 
 #footer .footer2 {
-    width: 60%;
+
 }
 
 #footer .footer2 ul {
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 #footer .footer2 ul li {
@@ -112,11 +112,11 @@ img {
 }
 
 #footer .footer3 {
-    width: 20%;
+    width: 40%;
 }
 
 #footer .footer3 span {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     padding-right: 10px;
 }
 
@@ -125,6 +125,7 @@ img {
     display: inline-block;
     height: auto;
     vertical-align: top;
+    float: right;
 }
 
 #footer .footer3 ul li {
