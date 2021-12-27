@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transition Basic</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #e65e25;
+            transition-duration: 1.2s;
+            -ms-transition-duration: 1.2s;
+            -moz-transition-duration: 1.2s;
+            -webkit-transition-duration: 1.2s;
+            
+        }
+        .box:hover {
+            width: 200px;
+            height: 300px;
+        }
+        .box:active {
+            background-color: #eeff23;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
