@@ -6,12 +6,24 @@ main {
 
 /* section01 */
 #section01 {
+    margin-bottom: 90px;
+}
+#section01 img {
     width: 100%; 
+}
+#section01 article {
+    width: 100%;
+    height: 100px;
+    background: brown;
 }
 /* section02 */
 #section02  {
     width: 1024px;
     margin: 0 auto;
+}
+
+#section02 h2 {
+    text-align: center;
 }
 #section02 ul {
     width: 100%;
