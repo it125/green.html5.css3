@@ -107,7 +107,7 @@ ul {
 #main_header .lnb_container {
     display: none;
     background: rgb(34, 34, 34);
-    height: 80px;
+    height: 70px;
     width: 100%;
     position: fixed;
     top: 61px;
@@ -116,6 +116,7 @@ ul {
 
 #main_header .lnb_container > .lnb {
     overflow: hidden;
+    width: 1024px;
     margin: 0 auto;
     display: none;
 }
@@ -123,6 +124,40 @@ ul {
 #main_header .lnb_container > .lnb > li {
     float: left;
     margin: 20px 10px 0 10px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.appear {
+    animation: fade-in, 0.5s;
+}
+
+.disappear {
+    animation: fade-out, 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 /* 검색창 */
