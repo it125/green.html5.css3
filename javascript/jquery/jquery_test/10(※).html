@@ -26,15 +26,16 @@
         </tr>
     </table>
     <p>
-    <input id="button1" type="button" value="Click"/></p>
+    <input id="button1" type="button" value="delete"/></p>
     <script src="jquery-3.6.0.min.js"></script>
     <script>
         $(function() {
             $("#button1").click(function() {
-                $("td").remove();
+                // $("td").remove();
+                $("#myTable").find("tr:gt(0)").remove();
             });
         });
-
+        
         
     </script>
 </body>

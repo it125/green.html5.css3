@@ -1,5 +1,30 @@
 @charset "UTF-8";
 
 main {
+    width: 1024px;
+}
+
+/* section01 */
+#section01 {
+    width: 100%; 
+}
+/* section02 */
+#section02  {
+    width: 1024px;
+    margin: 0 auto;
+}
+#section02 ul {
+    width: 100%;
+    overflow: hidden;
+}
+#section02 ul li {
+    float: left;
+}
+/* section03 */
+#section03 {
+
+}
+/* section04 */
+#section04 {
 
 }
