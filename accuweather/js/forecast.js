@@ -2,9 +2,7 @@ let url = "https://api.openweathermap.org/data/2.5/weather";
     url += "?appid=86ca54e737b95b856aa7e3df379815c5";
     url += "&units=metric";
     url += "&lang=kr";
-    url += "&q=incheon";
-    
-    // 보기 편하게 분리함(q={city name}&)
+    url += "&q=";
 
 // 현재 날씨의 모든 정보
 function getCurrenWeather(city) {
@@ -12,9 +10,9 @@ function getCurrenWeather(city) {
     var openWeatherAPI = url;
     $.ajax({
         type:"GET",
-        url: openWeatherAPI,
+        url: openWeatherAPI += city,
         dataType: "json",
-        // async: false,
+        async: false,
         success: function(data) {
             dataObj = data;
             /*
@@ -37,17 +35,18 @@ function getCurrenWeather(city) {
     });
     return dataObj;
 }
-// 현재 날씨  온도
+// 현재 날씨 온도
 function getCurrentTemp(city) {
     var temp = {};
     var openWeatherAPI = url;
     $.ajax({
         type:"GET",
-        url: openWeatherAPI,
+        url: openWeatherAPI += city,
         dataType: "json",
-        // async: false,
+        async: false,
         success: function(data) {
-            temp.celsius = data.main.temp;
+            temp.celsius = Math.floor(data.main.temp); // Math.floor(); => 소수점 이하 버림
+            temp.icon = data.weather[0].icon;
         },
         error: function(request, status, error) {
             // 응답 에러 시 처리 작업
@@ -56,7 +55,7 @@ function getCurrentTemp(city) {
             console.log("error:" + error);
         }
     });
-    return dataObj;
+    return temp;
 }
 
-var result =  getCurrenWeather();
+

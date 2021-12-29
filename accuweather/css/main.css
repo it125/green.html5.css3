@@ -48,6 +48,7 @@
 #main_content > #main_container > #main_section > #weather_location a span {
     display: inline-block;
     font-size: 18px;
+    padding-left: 10px;
 }
 
 #main_content > #main_container > #main_section > #weather_location a span:nth-child(1) {
@@ -121,6 +122,7 @@
     #main_content > #main_container > #main_section {
         width: calc(100% - 210px); /* aside의 width길이(210px) 만큼 빼줌. */ 
     }
+
 }
 
 @media screen and (min-width: 1024px) {

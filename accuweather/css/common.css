@@ -130,7 +130,8 @@ ul {
 
 #main_header .lnb_container > .lnb > li {
     float: left;
-    margin: 20px 10px 0 10px;
+    line-height: 70px;
+    padding-right: 30px;
 }
 
 .show {
