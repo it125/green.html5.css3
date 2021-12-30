@@ -2,21 +2,42 @@
 /* section01 */
 #section01 {
     padding-top: 110px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
-#section01 img {
-    width: 100%; 
+
+#section01 .notify {
+    width: 100%;
+    height: 700px;
+    background: url("../images/section01.jpg") no-repeat; 
+    background-size: cover;
+    background-position: center;
 }
+
 #section01 article {
     width: 100%;
     height: 70px;
     background: #3B0B17;
     color: #fff;
+    line-height: 70px;
+    text-align: center;
 }
+
+#section01 article div {
+    display: inline-block;
+}
+
+#section01 article div:first-child {
+    margin-right: 80px;
+}
+
+#section01 article span:first-child {
+    padding-right: 50px;
+}
+
 /* section02 */
 #section02 {
-    width: 1024px;
-    margin: 0 auto 90px;
+    width: 1430px;
+    margin: 0 auto 100px;
 }
 
 #section02 h2 {
@@ -52,19 +73,20 @@
     background: url("../images/intro_bg_pc.jpg");
     background-position: center;
     background-size: cover;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
 
 #section03 .brand_info {
-    width: 40%;
     padding: 100px;
-    color: #3B0B17;
-    margin: 0 auto;
-    padding-left: 500px;
+    width: 50%;
+    margin-right: 0;
+    margin-left: 700px;
+    color: #3B0B17;   
 }
 
 #section03 .brand_info p:nth-child(1) {
-    font-size: 2.2em;
+    font-size: 2.5em;
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
@@ -74,16 +96,24 @@
 }
 
 #section03 .brand_info p:nth-child(3) {
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: 600;
-    line-height: 35px;
+    line-height: 1.7;
     margin-bottom: 50px;
 }
 
+#section03 .brand_info_box div {
+    display: inline-block;
+    width: 33%;
+    border: 1px solid #3B0B17;
+}
+
+
+
 /* section04 */
 #section04 {
-    width: 1024px;
-    margin: 0 auto 90px;
+    width: 1430px;
+    margin: 0 auto 100px;
 }
 
 #section04 h2 {
@@ -115,8 +145,8 @@
 
 /* section05 */
 #section05 {
-    width: 1024px;
-    margin: 0 auto 90px;
+    width: 1430px;
+    margin: 0 auto 100px;
 }
 
 #section05 h2 {
