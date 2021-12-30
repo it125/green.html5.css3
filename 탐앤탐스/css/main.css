@@ -102,7 +102,35 @@
     margin-bottom: 50px;
 }
 
-#section03 .brand_info_box div {
+#section03 .brand_info_box .info_box1_wrap {
+    display: inline-block;
+    width: 33%;
+}
+
+#section03 .brand_info_box .info_box1 {
+    display: inline-block;
+    width: 33%;
+    border: 1px solid #3B0B17;
+    background-color: #3B0B17;
+}
+
+#section03 .brand_info_box .info_box2_wrap {
+    display: inline-block;
+    width: 33%;
+}
+
+#section03 .brand_info_box .info_box2 {
+    display: inline-block;
+    width: 33%;
+    border: 1px solid #3B0B17;
+}
+
+#section03 .brand_info_box .info_box3_wrap {
+    display: inline-block;
+    width: 33%;
+}
+
+#section03 .brand_info_box .info_box3 {
     display: inline-block;
     width: 33%;
     border: 1px solid #3B0B17;
