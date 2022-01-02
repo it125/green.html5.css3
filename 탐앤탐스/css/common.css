@@ -27,7 +27,7 @@ img {
 }
 
 #header .inner {
-    max-width: 1430px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
 }
@@ -70,18 +70,20 @@ img {
 
 /* footer */
 #footer {
+
     background-color: rgb(231, 231, 231);
 }
 
 #footer .f_wrap {
     display: flex;
-    margin: 0 auto;
-    width: 1430px;
     padding: 50px 0;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 #footer .footer1 {
     margin-right: 30px;
+    width: 50%;
 }
 
 #footer .footer1 p:first-child {
@@ -94,6 +96,7 @@ img {
 
 #footer .footer2 {
     margin-right: 30px;
+    width: 150%;
 }
 
 #footer .footer2 ul {
@@ -119,6 +122,7 @@ img {
 }
 
 #footer .footer3 {
+    width: 50%;
 
 }
 
