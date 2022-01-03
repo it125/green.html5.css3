@@ -12,6 +12,7 @@
 
 #section01 .exBox figure img {
     width: 100%;
+    object-fit: cover;
 }
 
 #section01 .exInfo {
